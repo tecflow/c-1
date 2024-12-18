@@ -299,22 +299,22 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a href="index.html">
+                <a href="index.php">
                   Home
                 </a>
-                <a href="about.html">
+                <a href="about.php">
                   About
                 </a>
-                <a href="treatment.html">
+                <a href="treatment.php">
                   Treatment
                 </a>
-                <a href="doctor.html" class="active">
+                <a href="doctor.php" class="active">
                   Doctors
                 </a>
-                <a href="testimonial.html">
+                <a href="testimonial.php">
                   Testimonial
                 </a>
-                <a href="contact.html">
+                <a href="contact.php">
                   Contact us
                 </a>
               </div>
