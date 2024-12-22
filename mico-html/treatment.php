@@ -1,4 +1,5 @@
 <?php include 'components/header.php';?>
+<?php include 'components/info_section.php';?>
 <?php include 'functions/shalva/col.php';?>
 
 
@@ -142,38 +143,14 @@
               Address
             </h5>
             <div class="info_contact">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
+
+              <?php Contact ($info_contact)?>
+
             </div>
             <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
+
+              <?php social_box($social_box)?>
+
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -182,24 +159,9 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a href="index.php">
-                  Home
-                </a>
-                <a href="about.php">
-                  About
-                </a>
-                <a href="treatment.php" class="active">
-                  Treatment
-                </a>
-                <a href="doctor.php">
-                  Doctors
-                </a>
-                <a href="testimonial.php">
-                  Testimonial
-                </a>
-                <a href="contact.php">
-                  Contact us
-                </a>
+
+                <?php navigation_menu($info_links)?>
+
               </div>
             </div>
           </div>
@@ -208,24 +170,7 @@
               <h5>
                 LATEST POSTS
               </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post1.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post2.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
+                <?php render_pictures1($pictures1)?>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -233,24 +178,7 @@
               <h5>
                 News
               </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post3.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post4.png" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
+                <?php render_pictures2($pictures2)?>
             </div>
           </div>
         </div>
@@ -258,6 +186,7 @@
     </div>
   </section>
   <!-- end info_section -->
+
 
 
   <!-- footer section -->
