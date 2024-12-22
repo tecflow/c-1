@@ -1,5 +1,6 @@
 <?php include 'components/header.php';?>
 <?php include 'components/info_section.php';?>
+<?php include 'functions/tata/placeholder.php';?>
 
 <!DOCTYPE html>
 <html>
@@ -105,15 +106,9 @@
         <div class="col-md-7">
           <div class="form_container">
             <form action="">
-              <div>
-                <input type="text" placeholder="Full Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
+              
+                <?php form($info);?>
+                
               <div>
                 <input type="text" class="message-box" placeholder="Message" />
               </div>
