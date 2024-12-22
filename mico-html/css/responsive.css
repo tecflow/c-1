@@ -165,3 +165,135 @@
     max-width: 1170px;
   }
 }
+
+/*successful_appointment სექციის რესპონსიული სტილები */
+
+@media (max-width: 768px) {
+  .background {
+    padding: 30px 0;
+  }
+
+  .letter {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .appointment-logo img {
+    width: 60px;
+    margin: 20px 0 40px;
+  }
+
+  .book-title h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .letter-text h5,
+  .letter-text p {
+    font-size: 16px;
+    margin: 0 20px 30px;
+    line-height: 30px;
+  }
+
+  .mico,
+  .hospital {
+    font-size: 18px;
+  }
+
+  .letter-details ul li {
+    margin-bottom: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+  .appointment-button {
+    width: 90px;
+    height: 45px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .letter-text h5,
+  .letter-text p {
+    font-size: 14px;
+  }
+
+  .mico,
+  .hospital {
+    font-size: 14px;
+  }
+
+  .letter-details ul li {
+    margin: 0;
+  }
+
+  .letter-details ul {
+    padding: 0 0 0 15px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+  .appointment-button {
+    width: 70px;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .background {
+    padding: 20px 0;
+  }
+
+  .letter {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .appointment-logo img {
+    width: 50px;
+    margin: 15px 0 30px;
+  }
+
+  .book-title h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .letter-text h5,
+  .letter-text p {
+    font-size: 14px;
+    margin: 0 10px 20px;
+    line-height: 25px;
+  }
+
+  .mico,
+  .hospital {
+    font-size: 14px;
+  }
+
+  .letter-details ul li {
+    margin-bottom: 15px;
+  }
+
+  .letter-details ul {
+    padding: 0 0 0 10px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+  .appointment-button {
+    width: 65px;
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+}
+/*successful_appointment სექციის რესპონსიული სტილების დასასრული*/

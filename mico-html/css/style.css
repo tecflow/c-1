@@ -574,6 +574,102 @@ a:focus {
   content: "\f106";
 }
 
+/*successful_appointment სექციის სტილები */
+
+.background {
+  background-color: #00937d;
+  padding: 50px 0;
+}
+
+.letter {
+  border: solid black 3px;
+  max-width: 700px;
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-logo img {
+  width: 80px;
+  margin: 30px 0px 50px;
+}
+
+.book-title h1 {
+  font-size: 30px;
+  word-spacing: 10px;
+  margin-bottom: 80px;
+}
+
+.letter-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.letter-text h5,
+.letter-text p {
+  font-size: 20px;
+  margin: 0 40px 40px 40px;
+  text-align: justify;
+  line-height: 40px;
+  color: #3b3c3d;
+  letter-spacing: 2px;
+}
+
+.mico {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hospital {
+  color: #00937d;
+  font-size: 20px;
+  font-weight: 700;
+}
+.letter-details ul li {
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.letter-details ul{
+  margin:0 40px 0 0;
+}
+
+.letter-details ul li h6::before {
+  content: "✓";
+  margin-right: 10px;
+  vertical-align: middle;
+  line-height: 30px;
+  font-weight: 700;
+  color: #045246;
+}
+
+h6 {
+  text-decoration: underline;
+  text-decoration-color: #aaa9a9;
+}
+
+.appointment-button {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  background-color: #02221e;
+  color: whitesmoke;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.appointment-button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+/*successful_appointment სექციის სტილების დასასრული */
+
+
 .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
