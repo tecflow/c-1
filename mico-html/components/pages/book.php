@@ -1,10 +1,32 @@
 <?php
-include ('data.php');
+
+// book section დავითი
+
+//ექიმების მონაცემები სახელები
+$doctorName = ['Duty Doctor','Giorgi Asabashvili','Lado Giorgobiani','Natia Asatiani','Giorgi Alavidze','Sandro Giorgobiani','Giorgi Alavidze','Sandro Giorgobiani']; 
 
 
-function AppointmentForm($doctorName, $departmentName) {
-    echo '
-    <section class="book_section layout_padding" id="book-appointment">
+//სამედიცინო სპეციალობები
+$departmentName = ['Reception','Pediatrics','Gynecology','Ophthalmology','Psychiatry','Dentistry','Psychiatry','Dentistry']; 
+
+// ექიმების სექცია
+function doctor($doctorName){
+ for ($i = 0; $i < count($doctorName); $i++) {
+        echo '<option value="'.$doctorName[$i].'">'.$doctorName[$i].'</option>';
+    }
+}
+
+
+// დეპარტამენტების სექცია
+function departament ($departmentName){
+    for ($i = 0; $i < count($departmentName); $i++) {
+        echo '<option value="'.$departmentName[$i].'">'.$departmentName[$i].'</option>';
+    }
+}
+?>
+
+
+<section class="book_section layout_padding" id="book-appointment">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -20,30 +42,16 @@ function AppointmentForm($doctorName, $departmentName) {
                             </div>
     
                             <div class="form-group col-lg-4">
-                                <label for="inputDoctorName">Doctor\'s Name</label> 
+                                <label for="inputDoctorName">Doctor's Name</label> 
                                 <select name="DoctorName" class="form-control wide" id="inputDoctorName">
-                                    ';
-
-                                    // ექიმების სექცია
-                                    for ($i = 0; $i < 5; $i++) {
-                                        echo '<option value="'.$doctorName[$i].'">'.$doctorName[$i].'</option>';
-                                    }
-
-                                echo '
+                                    <?php doctor($doctorName); ?>
                                 </select>
                             </div>
     
                             <div class="form-group col-lg-4">
-                                <label for="inputDepartmentName">Department\'s Name</label>
+                                <label for="inputDepartmentName">Department's Name</label>
                                 <select name="DepartmentName" class="form-control wide" id="inputDepartmentName">
-                                    ';
-
-                                    // დეპარტამენტების სექცია
-                                    for ($i = 0; $i < count($departmentName); $i++) {
-                                        echo '<option value="'.$departmentName[$i].'">'.$departmentName[$i].'</option>';
-                                    }
-
-                                echo '
+                                    <?php departament ($departmentName);?>
                                 </select>
                             </div>
                         </div>
@@ -80,6 +88,6 @@ function AppointmentForm($doctorName, $departmentName) {
                 </div>
             </div>
         </div>
-    </section>';
-}
-?>
+    </section>
+
+    
