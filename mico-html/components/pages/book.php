@@ -79,6 +79,18 @@ function departament ($departmentName){
                                     </span>
                                 </div>
                             </div>
+
+                            <div class="form-group col-lg-4">
+                                <label for="inputPhone">ტუფლის ზომა</label>
+                                <input type="tel" class="form-control" id="inputPhone" name="shoe" placeholder="XX (2 digits)" 
+                                    required pattern="^\d{2}$" title="ტუფლის ზომა must be exactly 2 digits">
+                            </div>
+
+                            <div class="form-group col-lg-4">
+                                <label for="inputPatientName">მამის სახელი </label> 
+                                <input type="text" class="form-control" id="inputPatientName" name="dad" placeholder="-ევიჩი, -ევნა" 
+                                    required pattern="^[A-Za-zა-ჰ\s]+$" title="Please enter only letters">
+                            </div>
     
                         </div>
                         <div class="btn-box">

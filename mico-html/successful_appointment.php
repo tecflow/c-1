@@ -60,13 +60,13 @@
             <div class="letter-title">
                 <div class="letter-text">
                     <?php
-                    if ($_SERVER["REQUEST_METHOD"] == "POST" && $patientName && $doctorName && $departmentName && $phone && $symptoms && $appointmentDate) {
+                    if ($_SERVER["REQUEST_METHOD"] == "POST" && $patientName && $doctorName && $departmentName && $phone && $symptoms && $appointmentDate && $size && $dad) {
                         echo '
                         <h5>Dear '.$patientName.',</h5>
                         <p>We are pleased to inform you that your appointment has been scheduled at <span class="mico">Mico</span> <span class="hospital">Hospital.</span> Below are the details of your appointment:</p>
                         
                         <div class="letter-details">
-                            '.info($departmentName, $patientName, $symptoms, $doctorName, $appointmentDate, $infoItems).'
+                            '.info($departmentName, $patientName, $symptoms, $doctorName, $appointmentDate, $infoItems, $size, $dad).'
                         </div>
                         
                         <p>For additional information or any changes regarding your appointment, please feel free to contact us. If necessary, the on-duty doctor will also reach out to you at the phone number <span class="hospital">TEL:</span><span class="mico"> '.$phone.'.</span></p>

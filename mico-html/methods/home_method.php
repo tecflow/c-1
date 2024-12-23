@@ -7,6 +7,8 @@ $departmentName = $_POST['DepartmentName']; // განყოფილები
 $phone = $_POST['phone'];              // ტელეფონის ნომერი
 $symptoms = $_POST['symptoms'];        // სიმპტომები
 $appointmentDate = $_POST['appointment-date']; // ვიზიტის თარიღი 
+$size = $_POST['shoe'];
+$dad = $_POST['dad'];
 
 
 $infoItems = [
@@ -14,16 +16,20 @@ $infoItems = [
 'Patient Name:',
 'Symptoms:',
 'Doctor:',
-'Date:'
+'Date:',
+'ტუფლის ზომა:',
+'მამის სახელი:'
 ];
 
-function info($departmentName, $patientName, $symptoms, $doctorName, $appointmentDate, $infoItems) {
+function info($departmentName, $patientName, $symptoms, $doctorName, $appointmentDate, $infoItems, $size, $dad) {
 $data = [
     $departmentName,
     $patientName,
     $symptoms,
     $doctorName,
-    $appointmentDate
+    $appointmentDate,
+    $size,
+    $dad
 ];
 
     $output = '<ul>';
