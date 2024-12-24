@@ -14,7 +14,7 @@
   </div>
 
   <!-- team section -->
-  <?php include 'components/pages/doctor_out.php'?>
+  <?php include 'pages/doctor_out.php'?>
   <!-- end team section -->
 
 

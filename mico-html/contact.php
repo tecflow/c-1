@@ -15,7 +15,7 @@
 
 
   <!-- contact section -->
-  <?php include 'components/pages/contact_out.php'?>
+  <?php include 'pages/contact_out.php'?>
   <!-- end contact section -->
 
   <!-- info section -->

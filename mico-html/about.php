@@ -21,7 +21,7 @@
 
   <!-- about section -->
 
-  <?php include 'components/pages/about_out.php'?>
+  <?php include 'pages/about_out.php'?>
 
   <!-- end about section -->
 

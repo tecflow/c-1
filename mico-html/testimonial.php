@@ -19,7 +19,7 @@
 
 
   <!-- client section -->
-  <?php include 'components/pages/testemonial_out.php'?>
+  <?php include 'pages/testemonial_out.php'?>
   <!-- end client section -->
 
 

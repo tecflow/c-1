@@ -18,7 +18,7 @@
 
   <!-- treatment section -->
 
-  <?php include 'components/pages/treatment_out.php'?>
+  <?php include 'pages/treatment_out.php'?>
 
   <!-- end treatment section -->
 
