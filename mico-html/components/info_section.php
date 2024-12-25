@@ -134,8 +134,8 @@ function render_pictures2($pictures2) {
           </a>
         </div>
         <div class="info_form">
-          <form action="">
-            <input type="email" placeholder="Your email">
+          <form action="subscribe.php" method="post">
+            <input type="email" name="subscribe" placeholder="Your email" required>
             <button>
               Subscribe
             </button>
